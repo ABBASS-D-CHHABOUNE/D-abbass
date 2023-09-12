@@ -1,0 +1,642 @@
+* 
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lugrasimo', cursive;
+    font-family: 'Play', sans-serif;
+    
+}
+
+
+.thepage 
+{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header header header header header header header header header "
+    "divherosection divherosection divherosection divherosection divherosection  divherosection divherosection divherosection divherosection divherosection"
+    "features features features features features features features features features features "
+    "Servicestitle Servicestitle Servicestitle Servicestitle Servicestitle Servicestitle Servicestitle Servicestitle Servicestitle Servicestitle"
+    "services services services services services services services services services services"
+    "about about about about about about about about about about"
+    "reso reso reso reso reso reso reso reso reso reso "
+    
+    ;
+    width: 100%;
+    
+}
+
+
+
+/* start navbar */
+
+header 
+{
+    display: flex;
+    justify-content: space-around;
+    grid-area: header;
+}
+.header .logo 
+{
+    background-color: #00F4FE;
+    color: white;
+    width: 50%;
+    text-align: center;
+    
+}
+.header .navbar 
+{
+    background-color:#00F4FE;
+    color: white;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.navbar 
+{
+    
+        position: relative;
+        display: block;
+        margin: 0;
+      
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #00F4FE;
+    color: white;
+    padding: 15px 15px;
+    font-size: 16px;
+    border: none;
+  }
+  .dropbtn > i {
+   
+    font-size: 30px;
+    line-height: 30px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 15px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block; position: relative;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+
+/* end nav bar */
+
+
+
+.divherosection 
+{
+    grid-area: divherosection;
+    display: flex;
+    justify-content:space-evenly;
+    flex-flow: row wrap;
+    background-color: rgb(156, 149, 149);
+    height: 75vh;
+    align-items: center;
+    gap: 50px;
+    background: rgb(91,153,206);
+    background: linear-gradient(0deg, rgba(91,153,206,1) 0%, rgba(0,245,255,1) 100%);
+   
+}
+@media (max-width:614px) {
+    
+    .divherosection 
+{
+    grid-area: divherosection;
+    display: flex;
+    justify-content:space-evenly;
+    flex-flow: row wrap;
+    background-color: rgb(156, 149, 149);
+    height: 95vh;
+    align-items: center;
+    text-align: center;
+   
+}
+
+
+}
+
+
+/* Hero section */
+
+.divherosection .section1
+{
+  position: relative; 
+  z-index: 1;
+  transition-delay: 1.5s;
+   
+}
+.divherosection .section1::after
+{
+
+    transform: scale(2px);
+   
+}
+.divherosection .section1 .calltoaction 
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    
+    
+
+}
+
+@media (max-width:614px)  {
+    .divherosection .section1 .calltoaction 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    
+
+}
+    
+}
+
+.divherosection .section1 .get 
+{
+       background-color: orange;
+       border: none;
+       width: 150px;
+       height: 50px;
+
+
+}
+.divherosection .section1 .explore  
+{
+       background-color: orange;
+       border: none;
+       width: 150px;
+       height: 50px;
+
+
+}
+
+
+
+
+
+.divherosection .section2 a img 
+{
+    width: 450px;
+    animation: tle3hbet 2s ease .5s infinite alternate backwards;
+    
+    
+    
+} 
+
+@keyframes tle3hbet {
+
+    from 
+    {
+        transform: translateY(-3%);
+
+    } 
+    to 
+    {
+        transform: translateY(3%);
+
+    }
+    
+}
+
+
+
+@media (max-width:614px) 
+{
+    .divherosection .section2 a img 
+{
+    width: 260px;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    
+} 
+    
+}
+  
+
+/* End of Hero section */
+/*start featurres section */
+.features 
+{
+    grid-area: features;
+    
+}
+.features .feat
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 100px 0px;
+    gap: 20px;
+    
+}
+
+.features .feat .featcontainer 
+{
+    text-align: center;
+    
+}
+.features .feat .featcontainer i 
+{
+    font-size: 80px;
+}
+@media (max-width:614px) 
+{
+    .features .feat .featcontainer 
+{
+    text-align: center;
+    margin: 0px 30px;
+    
+}    
+}
+/* End featurres section */
+
+
+/* Start services  */
+
+/* start services title*/
+
+.Servicestitle 
+{
+    background-color:white;
+    grid-area: Servicestitle;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    
+
+}
+.Servicestitle h1 
+{
+    color: #e8e8e8;
+    font-size: 80px;
+    text-align: center;
+    transition-duration:1s;
+    margin: 0;
+}
+
+.Servicestitle h1:hover 
+{
+    color: #ffffff;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+
+}
+.Servicestitle h1+p
+{
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    bottom: 25px;
+
+}
+
+/* start services title*/
+/* start services content*/
+.services 
+{
+    background-color: #F0F8FF;
+    grid-area: services;
+   
+   
+}
+.services .service-content 
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px;
+    flex-wrap: wrap;
+    
+}
+
+.services .service-content .contain-services
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 10px;
+    padding: 50px;
+    
+}
+
+.services .service-content .contain-services .conten
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    
+    
+}
+.services .service-content .contain-services .conten i
+{
+    
+    font-size: 50px;
+    position: relative;
+    top: 20px;
+    right: 24px;
+    font-size: 41px;
+
+}
+
+
+@media (max-width:768px) 
+{
+    .services .service-content 
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.services .service-content .contain-services .conten
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    
+    
+}
+
+}
+/* end services content*/
+
+/* end  services  */
+
+/* Start portfolio */
+
+.portfolio 
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 80px;
+    padding: 40px 0px;
+    background-color: #FFFFFF;
+
+}
+
+.portfolio .col-port 
+{
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px   #6f6f6f;
+    border:  1px solid black;
+    transition-duration: 1s;
+
+}
+.portfolio .col-port:hover 
+{
+    transform: translateY(-10px);
+}
+
+@media (max-width:767px) {
+    
+.portfolio .col-port 
+{
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px   #6f6f6f;
+    border:  1px solid black;
+    transition-duration: 1s;
+
+}
+.portfolio .col-port:hover 
+{
+    transform: scale(1.1);
+}
+    
+}
+
+
+.portfolio .col-port img
+{
+    margin: 0px;
+    width: 300px;
+}
+.portfolio .col-port .text-port
+{
+    margin: 0px;
+    background-color: white;
+    padding: 0px 10px;
+    gap: 0px;
+    
+}
+
+
+/* end portfolio */
+
+/* Start about  */
+
+.about 
+{
+    display: flex;
+    grid-area: about;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    flex-flow: row wrap;
+    gap: 80px;
+    align-items: center;
+    height: 60vh;
+    
+
+}
+
+@media (max-width:768px) {
+    .about 
+{
+    display: flex;
+    grid-area: about;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    flex-flow: row wrap;
+    gap: 80px;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+}
+.about .about-picture 
+{
+    animation: tle3hbet 2s ease .5s infinite alternate backwards;
+
+}
+.about .about-picture img 
+{
+    width: 225px;
+
+}
+.about .about-container > p
+{
+    
+    line-height: 1.7;
+    justify-content: center;
+    height: 100%;
+    margin: 10px;
+}
+ .about .about-container p + hr
+ {
+    
+    right: 137px;
+    border: 2px solid skyblue;
+    border-color: skyblue transparent transparent transparent;
+    width: 205px;
+    text-align: center;
+    position: relative;
+
+ }
+
+
+
+
+/* End about  */
+
+/* Start contact */
+
+.follow 
+{
+    display: flex;
+    grid-area: reso;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:768px) {
+
+    .follow 
+{
+    display: flex;
+    grid-area: reso;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+  .follow > h1 
+{
+    font-size: 23px;
+    
+}
+.follow  h1 + h2 
+{
+    font-size: 16px;
+    color: #10cab7;
+    
+}
+.follow .us 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 27px;
+
+}
+    
+}
+.follow .us 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+.follow > h1 
+{
+    color: #2c4755;
+    
+}
+.follow  h1 + h2 
+{
+   
+    color: #10cab7;
+    
+}
+/* End contact */
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.thefooter 
+{
+    background-color: #2c4755;
+    color: wheat;
+}
+.thefooter h3
+{
+    background-color:#2c4755;
+    color: wheat;
+    margin: 0;
+    text-align: center;
+padding: 20px 0px;
+}
+
+
+
+
